@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("application")
 }
 
 group = "mop"
@@ -17,4 +18,10 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+// Explicitly apply the application plugin
+configure<ApplicationPluginConvention> {
+    // Specify the main class
+    mainClassName = "mop.Main"
 }
