@@ -34,6 +34,7 @@ public class DatabaseConnect {
             try {
                 if (rs != null) rs.close();
             } catch (Exception e) {
+                System.out.println("EROOR");
                 e.printStackTrace();  // Print stack trace to console
             }
         }
